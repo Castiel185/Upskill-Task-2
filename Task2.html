@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Custom styles for the Inter font and overall body background */
+        body {
+            background-color: #f3f4f6; 
+        }
+    </style>
+</head>
+<body>
+    <!-- The form itself -->
+    <form>
+        <h1>CONTACT US</h1>
+
+        <!-- Full Name Input -->
+        <label>Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your Full Name">
+
+        <br>
+
+        <!-- Email Address Input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+        
+        <br>
+
+        <!-- Phone Number Input -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g., +1 (123) 456-7890">
+
+        <!-- Radio Buttons for Preferred Contact Method -->
+        
+            <legend>Preferred Contact Method:</legend>
+            <label for="contactEmail">
+                <input type="radio" id="contactEmail" name="contactMethod" value="email">
+                <span>Email</span>
+            </label>
+            <label for="contactPhone">
+                <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                <span>Phone</span>
+            </label>
+        <br>
+
+        <!-- Checkbox for Newsletter Subscription -->
+        <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <span>Subscribe to our newsletter</span>
+        </label>
+
+        <br>
+
+        <!-- Select Dropdown for Inquiry Type -->
+
+        <label for="inquiryType">Type of Inquiry:</label>
+        <select id="inquiryType" name="inquiryType">
+            <option value="">(Select)</option>
+            <option value="general">General Question</option>
+            <option value="feedback">Feedback (God abeg)</option>
+        </select>
+        
+        <br>
+        <br>
+
+        <!-- Message Textarea -->
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message here..."></textarea>
+
+        <br>
+        <br>
+        
+        <!-- Submit Button -->
+        <button type="submit">
+            Send Message
+        </button>
+    </form>
+</body>
+</html>
